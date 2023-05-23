@@ -19,6 +19,7 @@ h1{
     color: white;
     margin: 15px 0;
     font-size: 3.5rem;
+    
 }
 
 .titulo{
@@ -78,7 +79,7 @@ h1{
 
     .moreInfo{
         margin: 50px 0;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -114,7 +115,6 @@ h1{
     margin: 25px 0;
 
     opacity: 0;
-    transform: scale(0.9);
     transition: all 0.7s ease-in-out;
 }
 
@@ -141,13 +141,11 @@ h1{
     margin: 25px 0;
 
     opacity: 0;
-    transform: scale(0.9);
     transition: all 0.7s ease-in-out;
 }
 
 .visible{
     opacity: 1;
-    transform: scale(1);
 }
 
 #gustoAlianzaLima{
@@ -230,8 +228,6 @@ footer{
     font-size: .9rem;
 }
 
-
-
 @media (max-width: 900px){
     
     #gustoPelota{
@@ -253,6 +249,7 @@ footer{
     #gustoCarrera{
         height: 350px;
     }
+
     .gustosLeft{
         height: auto;
         grid-template-columns: 1fr;
@@ -264,11 +261,12 @@ footer{
         grid-template-columns: 1fr;
         opacity: 1;
     }
+
     .gustoTexto{
         font-size: 1.4rem;
     }
 
     .social p{
-        font-size: 1.9rem;
+        font-size: 1.4rem;
     }
 }
