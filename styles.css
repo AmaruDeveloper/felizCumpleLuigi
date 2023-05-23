@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #161616;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.18'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin: 15px 0;
+    font-size: 3.5rem;
+}
+
+.titulo{
+    margin: 75px 0;
+    text-align: center;
+}
+
+.contenedorPsyduck{
+    color: white;
+    background: #2f3542;
+    display: flex;
+    margin: 25px auto;
+    padding: 7px 2px;
+    border-radius: 15px;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.contenedorPsyduck figure{
+    cursor: pointer;
+}
+
+.contenedorPsyduck p{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.contenedorPsyduck .mensaje{
+    margin: auto;
+}
+
+.moreInfo{
+    margin: 150px 0;
+}
+
+@media (max-width: 900px){
+    .contenedorPsyduck{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    figure{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .psyduck1{
+        width: 75%;
+    }
+
+    .contenedorPsyduck .mensaje p{
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+
+    .moreInfo{
+        margin: 50px 0;
+        font-size: 2.5rem;
+    }
+}
+
+.psyduck1{
+    transition: transform 0.2s ease-in-out;
+}
+
+.rotacion {
+    animation: girar 0.2s linear 3;
+}
+
+@keyframes girar {
+    0% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+.contenedorMoreInfo{
+    width: 95%;
+    margin-bottom: 25px;
+}
+
+.gustosLeft{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 2fr;
+    margin: 25px 0;
+
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.7s ease-in-out;
+}
+
+#gustoPelota{
+    background: url('./img/pelotaFutbol.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: wheat;
+    height: auto;
+}
+
+.gustoTexto{
+    padding: 20px;
+    font-size: 1.8rem;
+    justify-content: left;
+    background: white;
+}
+
+.gustosRight{
+    display: grid;
+    height: auto;
+    grid-template-columns: 2fr 1fr;
+    margin: 25px 0;
+
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.7s ease-in-out;
+}
+
+.visible{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#gustoAlianzaLima{
+    background: url('./img/banderaAlianzaLIma.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: wheat;
+    height: auto;
+}
+
+#gustoPortero{
+    background: url('./img/arcoFutbol.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: wheat;
+    height: auto;
+}
+
+#gustoMusica{
+    background: url('./img/musica.jpg');
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: wheat;
+    height: auto;
+}
+
+#gustoCarrera{
+    background: url('./img/ingenieria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: wheat;
+    height: auto;
+}
+
+/*Social*/
+
+
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    color: white;
+}
+
+.social p{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.social .redesSociales{
+    margin: 25px auto;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+    font-size: 3rem;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background: #2f3542;
+    padding: 5px;
+    font-size: .9rem;
+}
+
+
+
+@media (max-width: 900px){
+    
+    #gustoPelota{
+        height: 350px;
+    }
+
+    #gustoAlianzaLima{
+        height: 280px;
+    }
+
+    #gustoPortero{
+        height: 350px;
+    }
+
+    #gustoMusica{
+        height: 350px;
+    }
+
+    #gustoCarrera{
+        height: 350px;
+    }
+    .gustosLeft{
+        height: auto;
+        grid-template-columns: 1fr;
+        opacity: 1;
+    }
+
+    .gustosRight{
+        height: auto;
+        grid-template-columns: 1fr;
+        opacity: 1;
+    }
+    .gustoTexto{
+        font-size: 1.4rem;
+    }
+
+    .social p{
+        font-size: 1.9rem;
+    }
+}
